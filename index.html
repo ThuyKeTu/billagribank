@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <div class="main-content">
+        <div class="opt">
+            <div class="money">
+                <input class="check1" type="radio" name="gia" onchange="changebill(1)" ><span>20tr</span>
+                <input class="check2" type="radio" name="gia" onchange="changebill(2)"><span>50tr</span>
+                <input class="check3" type="radio" name="gia" onchange="changebill(3)"><span>100tr</span>
+            </div>
+            <div class="send textinp">
+                <p>Tên người nhận</p>
+                <input id="psend" type="text">
+            </div>
+            <div class="nganhang textinp">
+                <p>ngân hàng</p>
+                <input id="pbank" type="text">
+            </div>
+            <div class="cardsend textinp">
+                <p>số tài khoản</p>
+                <input id="pcard" type="text">
+            </div>
+            <button id="download">Tải ảnh</button>
+        </div>
+        <div class="bill" id="bill">
+            <div class="bill-pre">
+               
+            </div>
+            <div class="bot">
+                <img src="./image/bot.png" alt="">
+            </div>
+            <p class="timetop"></p>
+            <P class="card"></P>
+            <p class="name"></p>
+            <p class="token"></p>
+            <p class="bank"></p>
+            <p class="cash">0 VND</p>
+            <p class="timebot"></p>
+            <p class="timehead"></p>
+
+        </div>
+    </div>
+    <script src="html2.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

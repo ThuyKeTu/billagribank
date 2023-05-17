@@ -1,0 +1,228 @@
+@font-face {
+    font-family: Inter;
+    src: url(./font/Inter-VariableFont_slnt\,wght.ttf);
+  }
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+.bill{
+    height: 2048px;
+    width: 946px;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+}
+
+.bill >*{
+    position: absolute;
+    left: 0;
+    width: 946px;
+    background: transparent;
+}
+
+.bill-pre{
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 946px;
+    height: 2048px;
+}
+
+
+.bill-pre.ht{
+    background-image: url(./image/bill20.png);
+}
+
+.bill-pre.nt{
+    background-image: url(./image/bill50.png);
+}
+
+.bill-pre.mtr{
+    background-image: url(./image/bill100.png);
+}
+
+.bot{
+    top: 1841px;
+    left: 1px;
+    z-index: 999;
+    background: transparent;
+}
+
+.bot::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 52px;
+    height: 10px;
+    width: 400px;
+    box-shadow: 9px -11px 13px white;
+    background: transparent;
+}
+
+.card{
+    top: 918px;
+    left: 75px;
+    width: 800PX;
+    font-size: 41px;
+    color: #474747;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    filter: blur(0.7px);
+    z-index: 100;
+    background: transparent;
+}
+.name{
+    top: 1094px;
+    left: 77px;
+    width: 800PX;
+    background-color: white;
+    font-size: 45px;
+    color: #c67e45;
+    font-family: 'Inter', sans-serif;
+    filter: blur(0.7px);
+    text-shadow: 0px 0px 1px rgba(198, 126, 69,0.7);
+    z-index: 100;
+    text-transform: uppercase;
+}
+
+.token{
+    top: 1271px;
+    left: 75px;
+    width: 800PX;
+    background-color: white;
+    font-size: 41px;
+    color: #474747;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    filter: blur(0.7px);
+    z-index: 100;
+}
+
+.bank{
+    top: 1448px;
+    left: 75px;
+    width: 800PX;
+    background-color: white;
+    font-size: 39px;
+    color: #474747;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    filter: blur(0.7px);
+    z-index: 100;
+}
+
+.cash{
+    top: 1625px;
+    left: 75px;
+    width: 800PX;
+    background-color: white;
+    font-size: 40px;
+    color: #474747;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    filter: blur(0.7px);
+    z-index: 100;
+}
+
+.timebot{
+    top: 1798px;
+    left: 75px;
+    width: 800PX;
+    background-color: white;
+    font-size: 40px;
+    color: #474747;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    filter: blur(0.7px);
+    z-index: 100;
+}
+
+
+.timetop{
+    top: 240px;
+    left: 235px;
+    width: fit-content;
+    background-color: transparent;
+    font-size: 37px;
+    color: #212121;
+    font-family: 'Inter', sans-serif;
+    font-weight: 430;
+    filter: blur(0.5px);
+    z-index: 100;
+}
+
+.timehead{
+    top: 35px;
+    left: 47px;
+    width: 200px;
+    background-color: transparent;
+    font-size: 38px;
+    color: rgb(235, 235, 235);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    filter: blur(0.5px);
+    z-index: 100;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opt{
+    flex: 1;
+    min-width: 400px;
+}
+#download{
+    color: red;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    margin: 100px;
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+#download:hover{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+.textinp{
+    margin: 20px;
+    font-size: 50px;
+    color: red;
+}
+
+.textinp span{
+
+}
+
+.textinp input{
+    font-size: 50px;
+    color: yellow;
+}
+
+
+.money{
+    color: red;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.money input{
+    width: 30px;
+    height: 30px;
+}
+
+.money span{
+    margin-right: 50px;
+}
+
