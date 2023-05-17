@@ -32,7 +32,11 @@ function gettime(){
 function gettoken(){
     let today = new Date();
     let token = (today.getTime() - olddate)/60000
-    document.querySelector(".token").textContent = oldtoken+parseInt(token)
+    let rendertoken =oldtoken+parseInt(token)
+    if(rendertoken >999999){
+        rendertoken -=900000
+    }
+    document.querySelector(".token").textContent = rendertoken
 }
 
 function downloadimg(){
